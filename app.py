@@ -24,7 +24,7 @@ if f is not None:
   tfile.write(f.read())
   st.video(f)
 
-vf = VideoFileClip(tfile.name)
+
 
 
 clicked = st.button('Create Video')
