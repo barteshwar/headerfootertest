@@ -4,11 +4,11 @@ import tempfile
 
 def make_video(vf):
   video_clip=vf
-  video_clip.write_videofile("test.mp4",codec='libx264',bitrate=4000)
-  #video_file=open("test.mp4",'rb')
+  video_clip.write_videofile("test.mp4")
+  video_file=open("test.mp4",'rb')
     #video_bytes = output_file.read()
     #st.video(video_bytes) 
-  video_bytes = video_clip.read()
+  video_bytes = video_file.read()
   st.video(video_bytes)
     #st.video(final_clip)
 
